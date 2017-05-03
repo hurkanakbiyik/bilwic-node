@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="chat">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat App</title>
+    <link href='bower_components/angular-material/angular-material.min.css'
+          rel='stylesheet' type='text/css'>
+  </head>
+  <body ng-controller="ClientController as vm">
+
+    <div layout="column" layout-align="center center">
+      <h1>Hello World!</h1>
+    </div>
+
+    <!-- libraries -->
+    <script src="bower_components/socket.io-client/dist/socket.io.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script>
+     // Initialize client socket
+      var socket = io();
+    </script>
+    <script src="client/client.module.js"></script>
+    <script src="client/client.controller.js"></script>
+    <script src="client/client.api.js"></script>
+    <script src="client/altDate.filter.js"></script>
+  </body>
+</html>
